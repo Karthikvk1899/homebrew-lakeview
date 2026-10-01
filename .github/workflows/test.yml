@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: brew style Formula/lakeview.rb
-      - run: brew install --formula ./Formula/lakeview.rb
+      - run: brew install Karthikvk1899/lakeview/lakeview
       - run: brew test lakeview
       - run: lakeview query 'SELECT 42 AS answer' --format jsonl
