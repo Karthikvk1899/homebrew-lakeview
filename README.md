@@ -16,5 +16,5 @@ bundle runs locally. It does not require a Python environment or a data service.
 The current binary release does not include macOS Intel or Linux ARM. For those
 platforms, use `pip install lakeview-cli` with Python 3.11 or newer.
 
-Formula updates are tested on an Apple Silicon GitHub runner before publication.
+Formula updates are tested on an Apple Silicon GitHub runner.
 The project license is Apache-2.0.
