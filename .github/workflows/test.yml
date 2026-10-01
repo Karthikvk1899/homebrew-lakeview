@@ -1,0 +1,16 @@
+name: Homebrew tap
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  install:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew style Formula/lakeview.rb
+      - run: brew install --formula ./Formula/lakeview.rb
+      - run: brew test lakeview
+      - run: lakeview query 'SELECT 42 AS answer' --format jsonl
