@@ -19,8 +19,7 @@ class Lakeview < Formula
   end
 
   def install
-    libexec.install "lakeview"
-    bin.write_exec_script libexec/"lakeview/lakeview"
+    bin.install "lakeview"
   end
 
   test do
